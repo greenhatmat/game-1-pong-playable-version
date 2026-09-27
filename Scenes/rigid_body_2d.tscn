@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b5sa61rrqdfli"]
+
+[ext_resource type="Script" uid="uid://csh6qxvomgwaw" path="res://Scenes/rigid_body_2d.gd" id="1_jiowd"]
+[ext_resource type="Texture2D" uid="uid://bga8rnfikhr5m" path="res://icon.svg" id="1_wltir"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_u7krg"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dveb6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dveb6"]
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=850594423]
+collision_layer = 4
+collision_mask = 3
+physics_material_override = SubResource("PhysicsMaterial_u7krg")
+gravity_scale = 0.0
+continuous_cd = 2
+linear_damp_mode = 1
+script = ExtResource("1_jiowd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1191337412]
+material = SubResource("ShaderMaterial_dveb6")
+position = Vector2(1.0728836e-06, -0.5000003)
+scale = Vector2(0.18750001, 0.21093749)
+texture = ExtResource("1_wltir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=986745976]
+shape = SubResource("CircleShape2D_dveb6")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ctejmfw3r7df8"]
+
+[ext_resource type="Script" uid="uid://cguhuk8rp7wfg" path="res://speed_up.gd" id="1_7hnyi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dveb6"]
+
+[node name="SpeedUp" type="Area2D" unique_id=1799858947]
+collision_mask = 4
+script = ExtResource("1_7hnyi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1775917511]
+shape = SubResource("RectangleShape2D_dveb6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dfognoelw74xj"]
+
+[ext_resource type="Script" uid="uid://b0iavu6g8nelf" path="res://Scenes/player_2.gd" id="1_8xjnt"]
+[ext_resource type="Texture2D" uid="uid://vqg7cjn4v0hf" path="res://Screenshot 2026-07-05 at 11.03.02 PM.png" id="2_ufh5k"]
+[ext_resource type="PackedScene" uid="uid://ctejmfw3r7df8" path="res://speed_up.tscn" id="3_a3adp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hh5uf"]
+size = Vector2(2.1092432, 15.903624)
+
+[node name="Player2" type="CharacterBody2D" unique_id=611843551]
+collision_layer = 2
+motion_mode = 1
+script = ExtResource("1_8xjnt")
+
+[node name="PlayerImage" type="Sprite2D" parent="." unique_id=1250849500]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_ufh5k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=942059514]
+position = Vector2(0, -1.9073486e-06)
+scale = Vector2(18.01594, 11.821205)
+shape = SubResource("RectangleShape2D_hh5uf")
+
+[node name="SpeedUp" parent="CollisionShape2D" unique_id=1799858947 instance=ExtResource("3_a3adp")]
+scale = Vector2(0.107456915, 0.80035883)

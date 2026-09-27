@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dp3gi4ve4v8np"
+path="res://.godot/imported/2frers - EYES ON US [NCS Release].mp3-4fb423407143f0de730178b14939d091.mp3str"
+
+[deps]
+
+source_file="res://2frers - EYES ON US [NCS Release].mp3"
+dest_files=["res://.godot/imported/2frers - EYES ON US [NCS Release].mp3-4fb423407143f0de730178b14939d091.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
